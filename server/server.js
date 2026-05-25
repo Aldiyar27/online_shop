@@ -25,11 +25,10 @@ const PORT = Number(process.env.PORT) || 1234;
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://127.0.0.1:5173"],
-    credentials: true
+    origin: "https://online-shop-woad-psi.vercel.app",
+    credentials: true,
   })
 );
-
 app.use(express.json());
 
 /*
